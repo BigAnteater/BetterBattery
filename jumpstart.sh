@@ -63,7 +63,7 @@ echo "run ./uninstall.sh to revert all changes."
 sleep 2s
 clear
 echo "A reboot is needed,type 'y' to reboot now and 'n' to reboot later"
-read $YN
+read YN
 
 if [ $YN = "y" ]
   then
