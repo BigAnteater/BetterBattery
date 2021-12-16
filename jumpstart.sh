@@ -7,7 +7,8 @@ if [ $EUID -ne 0 ]
 fi
 
 echo "Welcome fellow laptop user"
-sleep 1s
+echo "make sure you have yay installed"
+sleep 2s
 echo "This script will automatically set up your laptop to have a much higher battery life than before."
 sleep 2s
 clear
@@ -43,7 +44,7 @@ sleep 1s
 echo "Auto-cpufreq is a tool which governs, and configures your CPU to only use the ammount of power it actually needs on battery life."
 sleep 4s
 clear
-pacman -S auto-cpufreq
+yay -S auto-cpufreq
 sleep 1s
 auto-cpufreq --install
 sleep 4s
