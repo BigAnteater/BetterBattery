@@ -19,7 +19,7 @@ mv /etc/auto-cpufreq.conf.old /etc/auto-cpufreq.conf
 sleep 2s
 clear
 echo "A reboot is needed, type 'y' to reboot now and 'n' to reboot later"
-read $REBOOT
+read REBOOT
 
 if [ $REBOOT = "y" ]
   then
@@ -27,4 +27,3 @@ if [ $REBOOT = "y" ]
 fi
 
 done
-exit
