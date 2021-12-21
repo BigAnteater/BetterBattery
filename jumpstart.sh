@@ -44,7 +44,7 @@ sleep 1s
 echo "Auto-cpufreq is a tool which governs, and configures your CPU to only use the ammount of power it actually needs on battery life."
 sleep 4s
 clear
-yay -S auto-cpufreq
+runuser -l $USER -c 'yay -S auto-cpufreq'
 sleep 1s
 systemctl enable auto-cpufreq
 systemctl start autocpufreq
