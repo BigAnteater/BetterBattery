@@ -46,7 +46,8 @@ sleep 4s
 clear
 yay -S auto-cpufreq
 sleep 1s
-auto-cpufreq --install
+systemctl enable auto-cpufreq
+systemctl start autocpufreq
 sleep 4s
 clear
 echo "renaming old auto-cpufreq config. Don't poop your pants if you get an error, this only renames existing configs"
