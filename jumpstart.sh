@@ -39,7 +39,7 @@ clear
 runuser -l $USER -c 'yay -Sy auto-cpufreq'
 sleep 1s
 systemctl enable auto-cpufreq
-systemctl start autocpufreq
+systemctl start auto-cpufreq
 sleep 4s
 clear
 dialog --msgbox 'Renaming old auto-cpufreq config. Dont poop your pants if you get an error, this only renames existing configs' 20 50
